@@ -1,6 +1,10 @@
 # Domotique — tableau de bord ESP32
 
-Page GitHub Pages statique et responsive affichant les 50 dernières mesures de température et d’humidité envoyées par un ESP32.
+Page GitHub Pages statique et responsive affichant les 50 dernières mesures envoyées par un ESP32. L’humidité est facultative : un DS18B20 seul affiche la température et son graphique.
+
+## Exemple ESP32 DS18B20
+
+Voir [`esp32_ds18b20.ino`](esp32_ds18b20.ino) pour un exemple complet Wi-Fi, OneWire, DallasTemperature et HTTPClient. Renseignez localement `WIFI_SSID`, `WIFI_PASSWORD`, `WORKER_URL` et éventuellement `API_KEY`; ne committez jamais ces valeurs.
 
 Les données sont lues depuis l’endpoint public Cloudflare Worker :
 
